@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="@id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTopRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Red"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/line"
+        app:layout_constraintEnd_toStartOf="@id/btnTopBlue"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTopBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/btnTopAnim"
+        app:layout_constraintStart_toEndOf="@id/btnTopRed"
+        app:layout_constraintTop_toTopOf="@id/btnTopRed" />
+
+    <Button
+        android:id="@+id/btnTopAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anim"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/btnTopRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnTopBlue" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/line" />
+
+    <Button
+        android:id="@+id/btnBottomRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Red"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnBottomBlue"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBottomBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/btnBottomAnim"
+        app:layout_constraintStart_toEndOf="@id/btnBottomRed"
+        app:layout_constraintTop_toTopOf="@id/btnBottomRed" />
+
+    <Button
+        android:id="@+id/btnBottomAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anim"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/btnBottomRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnBottomBlue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
